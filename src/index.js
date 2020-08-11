@@ -4,7 +4,7 @@ const got = require('got');
 const serverEntryQuestions = [
   {
     name: `name`,
-    question: `What is your` first name?`,
+    question: `What is your first name?`,
     feedback: (answers) => `Great, hi! ${answers.name}`,
     getAnswers: (messageContent) =>
       messageContent.match(/^Great, hi (.*?) 👋/)?.[1] ?? null,
